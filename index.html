@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="container">
+    <div >
+        <header class="header-page">
+            <img src="./images/logo1.png" alt="logo da biblioteca">
+            <nav>
+                <ul>
+                    <li><a href="">Link1</a></li>
+                    <li><a href="">Link2</a></li>
+                    <li><a href="">Link3</a></li>
+                    <li><a href="">Lupa(inserir icon)</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+<main>
     
+     <!--Inicio criação dos cards dentro da main-->
+     <section class="background-livro" id="produtos">
+        <div class="container tittle-main">
+            <h1 class="news-tittle">
+                Destaques
+            </h1>
+            <p class="news-paragrafo">
+                Livros mais procurados:
+            </p>
+        <!-- </div> -->
+        <div class="container news-flex"> <!--pai dos cards-->
+            <article class="card">
+                <div class="info-card">
+                    <img src="./images/livro1.jpg" alt="Capa de livro - javaScript">
+                    <h2>JavaScript</h2>
+                    <p> Fornece uma ampla descrição da linguagem JavaScript básica e das APIs JavaScript do lado do cliente definidas pelos navegadores Web. </p>
+                </div>
+
+                
+            </article>
+            <article class="card">
+                <div class="info-card">
+                    <img src="./images/livro2.jpg" alt="Calçado lançamento">
+                    <h2>Código limpo</h2>
+                    <p>Ensina como escrever códigos limpos, legíveis, testáveis e manuteníveis, usando Agile Software.</p>
+                </div>
+
+            </article>
+            <article class="card">
+                <div class="info-card">
+                    <img src="./images/livro3.jpg" alt="Capa de livro - fundamentos HTML e CSS">
+                    <h2> HTML5 e CSS3</h2>
+                    <p> Tem o objetivo de fornecer aos iniciantes e estudantes da área de desenvolvimento web conceitos básicos e fundamentos da marcação HTML e estilização CSS.</p>
+                </div>
+
+            </article>
+            
+</main>
+
+    <footer id="footer">
+        <section class=" footer-flex">
+            <article class="box-01"> #criado para englobar informações da logo e links de midias sociais
+                <!-- <img src="images/logo1.png" alt="Logo da biblioteca"> -->
+                <p>bibliotecaIH - aqui o conhecimento flui sem fim</p>
+                <div class="midia-box-footer">
+                    <a href=""><img src="./images/Instagram.png" alt="logo instagran"></a>
+                    <a href=""><img src="./images/Facebook.png" alt="logo facebook"></a>
+                    <a href=""><img src="./images/Pinterest.png" alt="logo do pinterest"></a>
+                </div>
+            </article>
+
+            <article class="box-02">
+                <h1>Links Úteis</h1>
+                <ul>
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#main-produtos">Locação</a></li>
+                    <li><a href="#Footer">Sobre Nós</a></li>
+                </ul>
+            </article>
+
+            <article class="box-03">
+                <h1>Contatos</h1>
+                <h4>Localização</h4>
+                <p>Rua Moreira de Godoi, 226 -Ipiranga - SP</p>
+                <h4>Busque conhecimento conosco</h4>
+                <p>bibliotecaIH@senai.com</p>
+                <h4>Telefone</h4>
+                <p>(11)99999-9999</p>
+            </article>
+
+            <article class="box-04">
+                <h1>News Letter</h1>
+                <div class="input-gradient">
+                    <input type="email" placeholder="Informe seu email...">
+                </div>
+                <div>
+                    <button class="button-footer" type="submit">Enviar</button>
+                </div>
+            </article>
+            </section>
+     </section> 
+        <div class="footer-bottom">
+            <a href="#header"> <img src="images/arrow.png"
+                    alt="imagem de seta para direcionar inicio da pagina"></a>
+            <p class="copyright">&copy;Todos os direitos reservados</p>
+        </div>
+    </section>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
+
+
+<!-- nav>ul>li*4>a{link$} -->

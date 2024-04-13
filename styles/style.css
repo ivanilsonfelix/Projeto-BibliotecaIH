@@ -1,0 +1,286 @@
+:root {
+    --color-light:#ffffff;
+    --color-dark: #000000;
+    --color-pink:#dc143c;
+    --transition: .5s;
+    --font-body: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-pink);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;    
+    /* margin: 100px 200px 300px 400px; */
+    /* border: 20px solid #dc143c; */
+    /* padding: 20px; */
+    background-image: linear-gradient(to top, rgba(0,0,0, .8), rgba(0,0,0,0.3)),
+    url(../images/fundo_main.png);
+    /* background-repeat: no-repeat; */
+    background-size:contain;
+    background-position: 100%;
+}
+
+.header-page {
+    width: 100%;
+    height: 100px;
+    padding: 0 30px ;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.header-page ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header-page img {
+    width: 100;
+    height: 100px;
+}
+/* .container-grid {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+} */
+
+/*vamos realizas estilização dos cards da mais*/
+.background-livro{
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+}
+
+.tittle-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 25px; */
+}
+
+.background-livro .news-tittle{
+    color: white;
+    font-family: font-titulo-bold;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.background-livro .news-paragrafo{
+    color: white;
+    font-family: font-paragrafo-bold;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Realizar estilização dos cards */
+.news-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+
+}
+.card:hover{
+    box-shadow: 15px 0px 35px;
+}
+.info-card{ /*realiza a estilização dentro dos cards*/
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px;
+
+}
+.info-card h2{ /*realiza a estilização do h2 dentro dos cards*/
+    font-family: font-titulo-bold;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.info-card p{  /*realiza a estilização do p dentro dos cards*/
+    font-family:font-paragrafo-bold ;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    
+} 
+
+/*footer*/
+.footer-flex{ /*usado para definir altura e largura e tbem utilizado para posicionar os elementos no footer-flex*/
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+/*definir estilos dos titulos*/
+article h1{
+    color: white;
+    font-family: font-titulo-bold;
+    font-size: 35px;
+
+}
+.box-03 h4{ /*definindo padrao de texto do contatos*/
+    color: white;
+    font-family: font-titulo-bold;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.box-01{ /*realiza estilização do box-01, utilizando propriedades de alimentos e estilizando o paragrafo*/
+    width: 188PX;
+    height: 255PX;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: font-paragrado-bold;
+    font-size: 15px;
+}
+/*realiza o espaçamento dos icons dentro da box-01*/
+/* .midia-box-footer{  
+    
+    width: 188px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+} */
+
+.box-02 ul{
+    height: 100px;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+.box-02 li a{
+    color: white;
+    text-decoration: none;
+    
+
+}
+.box-02 li a:hover{
+    transition: all 0.5s;
+    color: black;
+
+}
+.box-03 h4{ /*definindo padrao de texto do contatos*/
+    color: white;
+    font-family: font-titulo-bold;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.box-03 p{
+    color: black;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+
+}
+.input-gradient{
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    
+}
+.box-04 .input-gradient input{
+    padding-left: 10px;
+    color: white;
+    background: transparent;
+    width: 200px;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    
+
+
+}
+.box-04 input::placeholder{
+    color: black;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+}
+.box-04 button{
+    height: 40px;
+    width: 200px;
+    background-color: #d245f5;
+    color: black;
+    font-family: font-titulo-bold;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-top: 30px;
+    
+}
+.input-gradient{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 46px;
+
+}
+.footer-bottom a{
+    align-self: flex-end;
+
+}
+.copyright{
+    color: black;
+    font-family: font-paragrafo-bold;
+    align-self: center;
+}
+
+@media screen {
+    
+}
