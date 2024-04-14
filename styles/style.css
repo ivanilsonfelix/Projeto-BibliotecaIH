@@ -186,39 +186,89 @@ input[type="number"]{
 }
 
 
-/* estilização footer */
-
-footer{
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.350);
+/*vamos realizas estilização dos cards da mais*/
+.background-livro{
+    height: 900px;
+    background-position: center;
+    background-size: cover;
 }
 
-.footer-style__grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 10%;
-    padding: 30px;
-}
-
-.footer-style__grid>article{
+.tittle-main{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-
-    gap: 30px;
-    font-size: 1.1rem;
+    text-align: center;
+    /* padding: 25px; */
 }
 
-.footer-style__grid>article>h1{
-    font-weight: 700;
+.background-livro .news-tittle{
+    color: white;
+    font-family: font-titulo-bold;
+    font-size: 40px;
+    font-weight: bold;
     text-transform: uppercase;
+    padding: 20px;
+    letter-spacing: 1px;
 }
 
+.background-livro .news-paragrafo{
+    color: white;
+    font-family: font-paragrafo-bold;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Realizar estilização dos cards */
+.news-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+
+}
+.card:hover{
+    box-shadow: 15px 0px 35px;
+}
+.info-card{ /*realiza a estilização dentro dos cards*/
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px;
+
+}
+.info-card h2{ /*realiza a estilização do h2 dentro dos cards*/
+    font-family: font-titulo-bold;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.info-card p{  /*realiza a estilização do p dentro dos cards*/
+    font-family:font-paragrafo-bold ;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    
+} 
+
+/*footer*/
 .footer-flex{ /*usado para definir altura e largura e tbem utilizado para posicionar os elementos no footer-flex*/
-    height: 581px;
+    height: 500px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -250,15 +300,16 @@ article h1{
     text-align: center;
     font-family: font-paragrado-bold;
     font-size: 15px;
-  
 }
-.midia-box-footer{  /*realiza o espaçamento dos icons dentro da box-01*/
+/*realiza o espaçamento dos icons dentro da box-01*/
+/* .midia-box-footer{  
+    
     width: 188px;
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+} */
 
-}
 .box-02 ul{
     height: 100px;
     font-family: font-paragrafo-bold;
@@ -309,6 +360,9 @@ article h1{
     border: none;
     border-radius: 8px;
     outline: none;
+    
+
+
 }
 .box-04 input::placeholder{
     color: black;
@@ -318,7 +372,7 @@ article h1{
 .box-04 button{
     height: 40px;
     width: 200px;
-    /* background-color: #f5b945; */
+    background-color: #d245f5;
     color: black;
     font-family: font-titulo-bold;
     font-size: 24px;
@@ -342,4 +396,13 @@ article h1{
 .footer-bottom a{
     align-self: flex-end;
 
+}
+.copyright{
+    color: black;
+    font-family: font-paragrafo-bold;
+    align-self: center;
+}
+
+@media screen {
+    
 }
