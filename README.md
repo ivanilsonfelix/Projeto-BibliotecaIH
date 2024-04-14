@@ -48,8 +48,8 @@ Campos:
 
 ## Membros da Equipe
 
-- [Hellen][https://www.linkedin.com/in/hellen-silva-/](https://www.linkedin.com/in/hellen-silva-/) - [GitHub](https://github.com/hellen)
-- [Ivan]((https://www.linkedin.com/in/ivanilson-f%C3%A9lix-59624626a/)) - [GitHub](https://github.com/ivan)
+- [Hellen][https://www.linkedin.com/in/hellen-silva-/] - [GitHub](https://github.com/hellen)
+- [Ivan](https://www.linkedin.com/in/ivanilson-f%C3%A9lix-59624626a/) - [GitHub](https://github.com/ivan)
 
 ## Frase Inspiradora
 
