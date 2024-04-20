@@ -77,6 +77,7 @@ async function getClientes() {
           }
         }
       });
+
       tdDelete.addEventListener("click", async () => {
         const id = clientes.id;
 
@@ -143,10 +144,10 @@ async function getLivros() {
       const numEdicao = document.createElement("td");
       numEdicao.textContent = livros.numEdicao;
       const tdEdith = document.createElement("img");
-      tdEdith.src = "./assets/images/pencil-fill.svg";
+      tdEdith.src = "./images/pencil-fill.svg";
 
       const tdDelete = document.createElement("img");
-      tdDelete.src = "./assets/images/trash-fill.svg";
+      tdDelete.src = "./images/trash-fill.svg";
 
       tdEdith.addEventListener("click", () => {
         const id = livros.id;
@@ -154,16 +155,16 @@ async function getLivros() {
 
         document.getElementById("title-form").textContent = "Atualizar Livros";
         document.getElementById("btnCadastrar").textContent = "Atualizar";
-        document.getElementById("nomeCliente").value = livros.nomeCatLivro;
-        document.getElementById("numTelefone").value = livros.nomeLivros;
-        document.getElementById("nomeEndereco").value = livros.nomeEscritor;
-        document.getElementById("anoNascimento").value = livros.numEdicao;
+        document.getElementById("nomeCatLivro").value = livros.nomeCatLivro;
+        document.getElementById("nomeLivros").value = livros.nomeLivros;
+        document.getElementById("nomeEscritor").value = livros.nomeEscritor;
+        document.getElementById("numEdicao").value = livros.numEdicao;
 
         if (window.confirm("Você deseja atualizar livros?")) {
-          document.getElementById("btnCadastrar").removeEventListener("click");
+          document.getElementById("btnCadastrarLivros").removeEventListener("click");
           document
-            .getElementById("btnCadastrar")
-            .addEventListener("click", atualizarSerie);
+            .getElementById("btnCadastrarLivros")
+            .addEventListener("click", atualizarLivros);
           async function atualizarLivros() {
             try {
               const dadosEnviadosAtualizados = {
@@ -193,14 +194,19 @@ async function getLivros() {
           }
         }
       });
-      tdDelete.addEventListener("click", async () => {
-        const id = livros.id;
 
-        if (window.confirm("Você deseja realmente apagar esse livro?")) {
+      tdDelete.addEventListener("click", async () => {
+        const id = livros.id
+
+        if (window.confirm("Você deseja realmente apagar esse livro?" + id)) {
           try {
-            const retorno = await fetch(`${url}/${id}`, {
+            const retorno = await fetch(`${url}/${id.toString()}`, {
               method: "DELETE",
             });
+
+            alert(retorno)
+
+            console.log(retorno);
 
             if (retorno.ok) {
               alert("O livro foi deletado com sucesso!");

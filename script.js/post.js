@@ -7,14 +7,17 @@ document
     // url do endpoint da aplicação web api
     const url = "http://localhost:8080/clientes";
 
+    const idUser = Math.floor(Math.random() * 100)
+    const id = "" + idUser
     //valores que está vindo do front-end
     const dadosEnviados = {
-      id: Math.floor(Math.random() * 100),
+      id: id,
       nomeClientes: document.getElementById("nomeClientes").value,
       numTelefone: document.getElementById("numTelefone").value,
       nomeEndereco: document.getElementById("nomeEndereco").value,
       anoNascimento: document.getElementById("anoNascimento").value,
     };
+
     try {
       await fetch(url, {
         method: "POST",
@@ -46,11 +49,14 @@ document
     // url do endpoint da aplicação web api
     const url = "http://localhost:8080/livros";
 
+    const idLivros = Math.floor(Math.random() * 100)
+    const id = "" + idLivros
+
     //valores que está vindo do front-end
     const dadosEnviados = {
-      id: Math.floor(Math.random() * 100),
+      id: id,
       nomeCatLivro: document.getElementById("nomeCatLivro").value,
-      nomeLivro: document.getElementById("nomeLivros").value,
+      nomeLivros: document.getElementById("nomeLivros").value,
       nomeEscritor: document.getElementById("nomeEscritor").value,
       numEdicao: document.getElementById("numEdicao").value,
     };
