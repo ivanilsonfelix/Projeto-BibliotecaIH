@@ -139,6 +139,7 @@ input[type="number"]{
     
     
     
+    
 
 
 }
@@ -146,6 +147,7 @@ input[type="number"]{
     box-shadow: 5px 8px 15px rgba(0,0 ,0 , 0.350);
     border-radius: 8px;
     padding: 20px;
+    
 }
 
 .main-flex__form-element-livro{
@@ -153,7 +155,8 @@ input[type="number"]{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
+    
     
 }
 .main-flex__inputs-livro{
@@ -341,5 +344,6 @@ article h1{
 }
 .footer-bottom a{
     align-self: flex-end;
+    
 
 }

@@ -1,0 +1,69 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nomeCliente": "Ivan",
+      "numTelefone": "11999999999",
+      "nomeEndereco": "Rua um",
+      "anoNascimento": "2020"
+    },
+    {
+      "id": 94,
+      "nomeCliente": "",
+      "numTelefone": "",
+      "nomeEndereco": "",
+      "anoNascimento": ""
+    },
+    {
+      "id": 23,
+      "nomeCliente": "hellen",
+      "numTelefone": "",
+      "nomeEndereco": "",
+      "anoNascimento": ""
+    },
+    {
+      "id": 50,
+      "nomeCliente": "hellen",
+      "numTelefone": "9999999999",
+      "nomeEndereco": "rua tres",
+      "anoNascimento": "2024"
+    },
+    {
+      "id": 65,
+      "nomeClientes": "gui",
+      "numTelefone": "00000000000",
+      "nomeEndereco": "rua cinco",
+      "anoNascimento": "2020"
+    },
+    {
+      "id": 64,
+      "nomeClientes": "teste",
+      "numTelefone": "2398473892",
+      "nomeEndereco": "teste",
+      "anoNascimento": "2002"
+    }
+  ],
+  "livros": [
+    {
+      "id": "1",
+      "nomeCatLivro": "tecnico",
+      "nomeLivro": "Java",
+      "nomeEscritor": "mm",
+      "numEdicao": "2"
+    },
+    {
+      "id": 38,
+      "nomeCatLivro": "aoba",
+      "nomeLivro": "aoba",
+      "nomeEscritor": "aoba",
+      "numEdicao": "123"
+    },
+    {
+      "id": 9,
+      "nomeCatLivro": "fantasia",
+      "nomeLivro": "pinoquio",
+      "nomeEscritor": "gepeto",
+      "numEdicao": "3"
+    }
+  ]
+}
