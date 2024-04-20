@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html  lang="pt-br">
+
 <html lang="pt-br">
 
 <head>
@@ -10,7 +12,219 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- link css -->
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
+<body class="container">
+    
+<main>
+    
+    <!--Inicio criação dos cards dentro da main-->
+    <section class="background-livro" id="produtos">
+       <div class="container tittle-main">
+           <h1 class="news-tittle">
+               Destaques
+           </h1>
+           <p class="news-paragrafo">
+               Livros mais procurados:
+           </p>
+       <!-- </div> -->
+       <div class="container news-flex"> <!--pai dos cards-->
+           <article class="card">
+               <div class="info-card">
+                   <img src="./images/livro1.jpg" alt="Capa de livro - javaScript">
+                   <h2>JavaScript</h2>
+                   <p> Fornece uma ampla descrição da linguagem JavaScript básica e das APIs JavaScript do lado do cliente definidas pelos navegadores Web. </p>
+               </div>
+
+               
+           </article>
+           <article class="card">
+               <div class="info-card">
+                   <img src="./images/livro2.jpg" alt="Calçado lançamento">
+                   <h2>Código limpo</h2>
+                   <p>Ensina como escrever códigos limpos, legíveis, testáveis e manuteníveis, usando Agile Software.</p>
+               </div>
+
+           </article>
+           <article class="card">
+               <div class="info-card">
+                   <img src="./images/livro3.jpg" alt="Capa de livro - fundamentos HTML e CSS">
+                   <h2> HTML5 e CSS3</h2>
+                   <p> Tem o objetivo de fornecer aos iniciantes e estudantes da área de desenvolvimento web conceitos básicos e fundamentos da marcação HTML e estilização CSS.</p>
+               </div>
+
+           </article>
+           
+
+    <div >
+        <header class="header-page">
+            <img src="" alt="logo da biblioteca">
+            <nav>
+                <ul>
+                    <li><a href="">Link1</a></li>
+                    <li><a href="">Link2</a></li>
+                    <li><a href="">Link3</a></li>
+                    <li><a href="">Lupa(inserir icon)</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+   
+    <section class="container-grid section-flex" >
+        <article class="main-flex">
+            <div class="main-flex__form">
+                <h2 id="title-form">
+                    Cadastro de clientes
+                </h2>
+                <form action="" class="main-flex__form-element" id="formValidation">
+                    <div class="main-flex__inputs">
+                        <label for="">Informe o nome do cliente</label>
+                        <input type="text" placeholder="Ex: Ivanilson" id="nomeCliente" required>
+                    </div>
+                    <div class="main-flex__inputs">
+                        <label for="">Informe o número de telefone</label>
+                        <input type="number" placeholder="Ex: 11999999999" id="numTelefone" required>
+                    </div>
+                    <div class="main-flex__inputs">
+                        <label for="">Informe endereço</label>
+                        <input type="text" placeholder="Ex: rua um" id="nomeEndereco" required>
+                    </div>
+                    <div class="main-flex__inputs">
+                        <label for="">Informe ano de nascimento</label>
+                        <input type="number" placeholder="Ex: 2012" id="anoNascimento" required max="2024">
+                    </div>
+                    
+
+                    <div class="main-flex__button">
+                        <button type="submit" id="btnCadastrar">
+                            Cadastrar Cliente
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </article> 
+        <article class="main-flex-livro">
+            <div class="main-flex__form-livro">
+                <h2 id="title-form-livro">
+                    Cadastro de Livros
+                </h2>
+                <form action="" class="main-flex__form-element-livro" id="formValidation-livro">
+                    <div class="main-flex__inputs-livro">
+                        <label for="">Informe a categoria do livro</label>
+                        <input type="text" placeholder="Ex: Técnico" id="nomeCatLivro" required>
+                    </div>
+                    
+                    <div class="main-flex__inputs-livro">
+                        <label for="">Informe o nome do livro</label>
+                        <input type="text" placeholder="Ex: Java Script" id="nomeLivro" required>
+                    </div>
+                    <div class="main-flex__inputs-livro">
+                        <label for="">Nome do Autor</label>
+                        <input type="text" placeholder="Ex: mm" id="nomeEscritor" required>
+                    </div>
+                    
+                    <div class="main-flex__inputs-livro">
+                        <label for="">Informe a Edição</label>
+                        <input type="number" placeholder="Ex: Java Script" id="n" required>
+                    </div>
+                    
+                    
+
+                    <div class="main-flex__button">
+                        <button type="submit" id="btnCadastrar">
+                            Cadastrar Livros
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </article> 
+        <article class="main-flex">
+            <div class="main-flex__listagem-flex">
+                <h2>
+                    Lista de séries
+                </h2>
+                <table cellspacing="12" class="main-flex__listagem-flex__table">
+                    <thead>
+                        <tr>
+                            <th>Nome do cliente</th>
+                            <th>Nome do livro</th>
+                            <th>Data de locação</th>
+                            <th>Data de devolução</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaSeries" class="main-flex__listagem-flex__dados">
+                       
+                                              
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </article>
+    </section>     
+</main>
+
+<footer id="footer">
+    <section class=" footer-flex">
+        <article class="box-01"> #criado para englobar informações da logo e links de midias sociais
+            <!-- <img src="images/logo1.png" alt="Logo da biblioteca"> -->
+            <p>bibliotecaIH - aqui o conhecimento flui sem fim</p>
+            <div class="midia-box-footer">
+                <a href=""><img src="./images/Instagram.png" alt="logo instagran"></a>
+                <a href=""><img src="./images/Facebook.png" alt="logo facebook"></a>
+                <a href=""><img src="./images/Pinterest.png" alt="logo do pinterest"></a>
+            </div>
+        </article>
+
+        <article class="box-02">
+            <h1>Links Úteis</h1>
+            <ul>
+                <li><a href="#header">Início</a></li>
+                <li><a href="#main-produtos">Locação</a></li>
+                <li><a href="#Footer">Sobre Nós</a></li>
+            </ul>
+        </article>
+
+        <article class="box-03">
+            <h1>Contatos</h1>
+            <h4>Localização</h4>
+            <p>Rua Moreira de Godoi, 226 -Ipiranga - SP</p>
+            <h4>Busque conhecimento conosco</h4>
+            <p>bibliotecaIH@senai.com</p>
+            <h4>Telefone</h4>
+            <p>(11)99999-9999</p>
+        </article>
+
+        <article class="box-04">
+            <h1>News Letter</h1>
+            <div class="input-gradient">
+                <input type="email" placeholder="Informe seu email...">
+            </div>
+            <div>
+                <button class="button-footer" type="submit">Enviar</button>
+            </div>
+        </article>
+        </section>
+ </section> 
+    <div class="footer-bottom">
+        <a href="#header"> <img src="images/arrow.png"
+                alt="imagem de seta para direcionar inicio da pagina"></a>
+        <p class="copyright">&copy;Todos os direitos reservados</p>
+    </div>
+</section>
+</footer>
+
+<script src="./scripts/script.js"></script>
 <main>
 <body class="container">
     <div>
@@ -126,6 +340,9 @@
 </body>
 </main>
 </html>
+
+
+
 
 
 <!-- nav>ul>li*4>a{link$} -->
