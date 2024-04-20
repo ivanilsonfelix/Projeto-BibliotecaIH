@@ -40,7 +40,8 @@ html {
     ),
     url(../images/fundo_main.png);
   background-size: contain;
-  background-position: 100%; }
+  background-position: center;
+  /* background-position: 100%; } */
 
 /* .container {
   width: 100%;
@@ -89,10 +90,12 @@ html {
     box-shadow: 5px 8px 15px rgba(0,0 ,0 , 0.350);
     border-radius: 8px;
     padding: 20px;
+    color: var(--color-light);
 }
 .main-flex__form>h2{
     text-align: center;
     margin-bottom: 10px;
+    color: var(--color-light);
     
     
 }
@@ -129,8 +132,10 @@ input[type="number"]{
     height: 50px;
     display: flex;
     justify-content: space-between;
-    
-    
+}
+
+.main-flex-livro{
+  color: var(--color-light);
 }
 .main-flex__button>button{
     border: none;
@@ -147,7 +152,7 @@ input[type="number"]{
     grid-template-columns:  repeat(auto-fill, minmax(350px, 1fr)); 
     gap: 40px;
     margin-top: -10px;
-    
+}
     
     
     
@@ -207,10 +212,11 @@ input[type="number"]{
   letter-spacing: -1px;
 }
 .main-flex-livro{
-    box-shadow: 5px 8px 15px rgba(0,0 ,0 , 0.350);
+    box-shadow: 5px 8px 15px rgba(255, 255, 255, 0.35);
     border-radius: 8px;
     padding: 20px;
-    
+  }
+
 .card:hover {
   box-shadow: 15px 0px 350px 50px;
   color: var(--color-esc);
@@ -240,7 +246,7 @@ input[type="number"]{
     height: 50px;
     display: flex;
     justify-content: space-between;
-    
+    }
     
 .info-card {
   height: 300px;
@@ -416,4 +422,5 @@ article p{
 
 @media screen {    
 
+}
 }

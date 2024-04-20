@@ -8,35 +8,35 @@
       "anoNascimento": "2020"
     },
     {
-      "id": 94,
+      "id": "94",
       "nomeCliente": "",
       "numTelefone": "",
       "nomeEndereco": "",
       "anoNascimento": ""
     },
     {
-      "id": 23,
+      "id": "23",
       "nomeCliente": "hellen",
       "numTelefone": "",
       "nomeEndereco": "",
       "anoNascimento": ""
     },
     {
-      "id": 50,
+      "id": "50",
       "nomeCliente": "hellen",
       "numTelefone": "9999999999",
       "nomeEndereco": "rua tres",
       "anoNascimento": "2024"
     },
     {
-      "id": 65,
+      "id": "65",
       "nomeClientes": "gui",
       "numTelefone": "00000000000",
       "nomeEndereco": "rua cinco",
       "anoNascimento": "2020"
     },
     {
-      "id": 64,
+      "id": "64",
       "nomeClientes": "teste",
       "numTelefone": "2398473892",
       "nomeEndereco": "teste",
@@ -52,18 +52,25 @@
       "numEdicao": "2"
     },
     {
-      "id": 38,
+      "id": "38",
       "nomeCatLivro": "aoba",
       "nomeLivro": "aoba",
       "nomeEscritor": "aoba",
       "numEdicao": "123"
     },
     {
-      "id": 9,
+      "id": "9",
       "nomeCatLivro": "fantasia",
       "nomeLivro": "pinoquio",
       "nomeEscritor": "gepeto",
       "numEdicao": "3"
+    },
+    {
+      "id": 72,
+      "nomeCatLivro": "tecnico",
+      "nomeLivro": "javasc",
+      "nomeEscritor": "aaa",
+      "numEdicao": "2"
     }
   ]
 }
