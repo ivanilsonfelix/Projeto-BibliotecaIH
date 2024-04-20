@@ -1,6 +1,6 @@
-const url = "http://localhost:8080/series"
 
- async function getSeries() {
+async function getClientes() {
+     const url = "http://localhost:8080/clientes"
     try{ 
         const response = await fetch(url)
         console.log(response);
@@ -8,8 +8,8 @@ const url = "http://localhost:8080/series"
         const dados = await response.json()
         console.log(dados);
 
-        dados.forEach(series=> {
-            const listaSeries = document.getElementById('listaSeries');
+        dados.forEach(clientes=> {
+            const listaClientes = document.getElementById('listaClientes');
         
             const tr = document.createElement('tr');
             const div = document.createElement('div');
@@ -17,16 +17,16 @@ const url = "http://localhost:8080/series"
         
             //realizar a criação das celulas das nossas tabelas
             const nomeCliente = document.createElement('td')
-            nomeCliente.textContent = series.nomeCliente
+            nomeCliente.textContent = clientes.nomeCliente
         
             const numTelefone = document.createElement('td')
-            numTelefone.textContent = series.numTelefone
+            numTelefone.textContent = clientes.numTelefone
         
             const nomeEndereco = document.createElement('td')
-            nomeEndereco.textContent = series.nomeEndereco
+            nomeEndereco.textContent = clientes.nomeEndereco
         
             const anoNascimento = document.createElement('td')
-            anoNascimento.textContent = series.anoNascimento
+            anoNascimento.textContent = clientes.anoNascimento
 
             const tdEdith = document.createElement('img')
             tdEdith.src = './assets/images/pencil-fill.svg'
@@ -35,20 +35,20 @@ const url = "http://localhost:8080/series"
             tdDelete.src = './assets/images/trash-fill.svg'
 
             tdEdith.addEventListener('click', () => {
-                const id = series.id
+                const id = clientes.id
                 alert(id);
 
                 document.getElementById('title-form').textContent = "Atualizar Cliente"
                 document.getElementById('btnCadastrar').textContent = "Atualizar"
-                document.getElementById('nomeCliente').value = series.nomeCliente
-                document.getElementById('numTelefone').value = series.numTelefone
-                document.getElementById('nomeEndereco').value = series.nomeEndereco
-                document.getElementById('anoNascimento').value = series.anoNascimento
+                document.getElementById('nomeCliente').value = clientes.nomeCliente
+                document.getElementById('numTelefone').value = clientes.numTelefone
+                document.getElementById('nomeEndereco').value = clientes.nomeEndereco
+                document.getElementById('anoNascimento').value = clientes.anoNascimento
 
                 if (window.confirm("Você deseja atualizar cliente?")) {
                     document.getElementById('btnCadastrar').removeEventListener('click')
                     document.getElementById('btnCadastrar').addEventListener('click', atualizarSerie)
-                    async function atualizarSerie() {
+                    async function atualizarClientes() {
                         try{
                             const dadosEnviadosAtualizados = {
                                 'nomeCliente' : document.getElementById('nomeCliente').value,
@@ -80,7 +80,7 @@ const url = "http://localhost:8080/series"
                     
                 });
                 tdDelete.addEventListener('click', async () => {
-                    const id = series.id
+                    const id = clientes.id
 
                     if (window.confirm("Você deseja realmente apagar esse cliente?")) {
 
@@ -110,7 +110,7 @@ const url = "http://localhost:8080/series"
             div.appendChild(tdEdith)
             div.appendChild(tdDelete)
         
-            listaSeries.appendChild(tr)
+            listaClientes.appendChild(tr)
             
         });
         
@@ -121,4 +121,129 @@ const url = "http://localhost:8080/series"
 
 
  }
-getSeries()
+getClientes()
+
+//CADASTRO LIVROS
+
+async function getLivros() {
+     const url = "http://localhost:8080/livros"
+    try{ 
+        const response = await fetch(url)
+        console.log(response);
+
+        const dados = await response.json()
+        console.log(dados);
+
+        dados.forEach(livros=> {
+            const listaLivros = document.getElementById('listaLivros');
+        
+            const tr = document.createElement('tr');
+            const div = document.createElement('div');
+            
+        
+            //realizar a criação das celulas das nossas tabelas
+            const nomeCatLivro = document.createElement('td')
+            nomeCatLivro.textContent = livros.nomeCatLivro
+        
+            const nomeLivros = document.createElement('td')
+            nomeLivros.textContent = livros.nomeLivros
+        
+            const nomeEscritor = document.createElement('td')
+            nomeEscritor.textContent = livros.nomeEscritor
+        
+            const numEdicao = document.createElement('td')
+            numEdicao.textContent = livros.numEdicao
+            const tdEdith = document.createElement('img')
+            tdEdith.src = './assets/images/pencil-fill.svg'
+
+            const tdDelete = document.createElement('img')
+            tdDelete.src = './assets/images/trash-fill.svg'
+
+            tdEdith.addEventListener('click', () => {
+                const id = livros.id
+                alert(id);
+
+                document.getElementById('title-form').textContent = "Atualizar Livros"
+                document.getElementById('btnCadastrar').textContent = "Atualizar"
+                document.getElementById('nomeCliente').value = livros.nomeCatLivro
+                document.getElementById('numTelefone').value = livros.nomeLivros
+                document.getElementById('nomeEndereco').value = livros.nomeEscritor
+                document.getElementById('anoNascimento').value = livros.numEdicao
+
+                if (window.confirm("Você deseja atualizar livros?")) {
+                    document.getElementById('btnCadastrar').removeEventListener('click')
+                    document.getElementById('btnCadastrar').addEventListener('click', atualizarSerie)
+                    async function atualizarLivros() {
+                        try{
+                            const dadosEnviadosAtualizados = {
+                                'nomeCatLivro' : document.getElementById('nomeCatLivro').value,
+                                'nomeLivros': document.getElementById('nomeLivros').value,
+                                'nomeEscritor' : document.getElementById('nomeEscritor'),value,
+                                'numEdicao' : document.getElementById('numEdicao').value
+                            }
+                                const retorno = await fetch('${url}/${id}', {
+                                    method: 'PUT',
+                                    headers:{
+                                        'Content-type':'application/json'
+                                    },
+                                    body: JSON.stringify(dadosEnviadosAtualizados)
+                                });
+
+                                if (retorno.ok) {
+                                    alert("Livro atualizado com sucesso!")
+                                }else{
+                                    alert('Livro não pode ser atualizado ${retorno.status')
+                                }
+                                window.location.reload();
+                                    
+                                }catch (error){
+                                    console.log(error);
+                                }
+                        }
+
+                    }
+                    
+                });
+                tdDelete.addEventListener('click', async () => {
+                    const id = livros.id
+
+                    if (window.confirm("Você deseja realmente apagar esse livro?")) {
+
+                        try {
+                            const retorno = await fetch(`${url}/${id}`, {
+                                method: 'DELETE'
+                            })
+
+                            if (retorno.ok) {
+                                alert('O livro foi deletado com sucesso!')
+                            } else {
+                                alert(`Erro ao deletar livro ${retorno.status}`)
+                            }
+                            
+                        } catch (error) {
+                            console.log(error);
+                        }
+
+                    }
+                })
+                
+            tr.appendChild(nomeCatLivro)
+            tr.appendChild(nomeLivros)
+            tr.appendChild(nomeEscritor)
+            tr.appendChild(numEdicao)
+            tr.appendChild(div)
+            div.appendChild(tdEdith)
+            div.appendChild(tdDelete)
+        
+            listaLivros.appendChild(tr)
+            
+        });
+        
+
+}catch (error){
+    console.log(error);
+}
+
+
+ }
+getLivros()

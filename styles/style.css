@@ -72,6 +72,88 @@ html {
   height: 70px;
 }
 
+
+.section-flex{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(350px, 1fr)); 
+    gap: 40px;
+    margin-top: -10px;
+    
+    
+    
+    
+
+
+}
+.main-flex{
+    box-shadow: 5px 8px 15px rgba(0,0 ,0 , 0.350);
+    border-radius: 8px;
+    padding: 20px;
+}
+.main-flex__form>h2{
+    text-align: center;
+    margin-bottom: 10px;
+    
+    
+}
+.main-flex__form-element{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
+.main-flex__inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    
+
+}
+input[type="text"]{
+    border: none;
+    border-bottom: 2px solid black;
+    
+}
+input[type="number"]{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    height: 30px;
+    
+}
+.main-flex__button{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.main-flex__button>button{
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 8px;
+    background-color: darkgrey;
+    width: 40%;
+    cursor: pointer;
+    
+}
+.section-flex-livro{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(350px, 1fr)); 
+    gap: 40px;
+    margin-top: -10px;
+    
+    
+    
+    
+    
+
+
 .logo {
   width: 70px;
   height: 70px;
@@ -124,10 +206,42 @@ html {
   margin: 0 20px 20px 40px;
   letter-spacing: -1px;
 }
+.main-flex-livro{
+    box-shadow: 5px 8px 15px rgba(0,0 ,0 , 0.350);
+    border-radius: 8px;
+    padding: 20px;
+    
 .card:hover {
   box-shadow: 15px 0px 350px 50px;
   color: var(--color-esc);
 }
+
+.main-flex__form-element-livro{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    
+    
+}
+.main-flex__inputs-livro{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    
+
+}
+
+
+.main-flex__button-livro{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+    
 .info-card {
   height: 300px;
   display: flex;
@@ -300,5 +414,6 @@ article p{
   }
 }
 
-@media screen {
+@media screen {    
+
 }
